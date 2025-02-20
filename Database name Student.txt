@@ -1,0 +1,90 @@
+1. Login Form (LoginForm.cs)
+📌 Purpose: Allows admin/staff to log in.
+
+🖼️ UI Elements:
+
+Username (Textbox)
+Password (Textbox)
+Login (Button)
+Exit (Button)
+🔄 Functionality:
+
+When you enter username & password and click Login, it checks the database.
+If correct → Open Dashboard Form.
+If wrong → Show error message.
+2. Dashboard Form (DashboardForm.cs)
+📌 Purpose: Main menu to navigate to other forms.
+
+🖼️ UI Elements:
+
+Buttons:
+Manage Students → Opens StudentForm
+Manage Courses → Opens CourseForm
+Enroll Students → Opens EnrollmentForm
+Assign Grades → Opens GradesForm
+Logout → Goes back to LoginForm
+3. Student Form (StudentForm.cs)
+📌 Purpose: Manage students (Add, Edit, Delete).
+
+🖼️ UI Elements:
+
+Student List (DataGridView) → Shows student details from the database.
+Textboxes:
+Name
+Date of Birth
+Gender (Dropdown)
+Email
+Phone
+Buttons:
+Add Student → Saves new student to the database.
+Edit Student → Updates selected student.
+Delete Student → Removes student.
+🖱️ When Clicking a Student in the List:
+
+Fills textboxes with selected student info for editing.
+4. Course Form (CourseForm.cs)
+📌 Purpose: Manage courses (Add, Edit, Delete).
+
+🖼️ UI Elements:
+
+Course List (DataGridView) → Shows available courses.
+Textboxes:
+Course Name
+Credits
+Buttons:
+Add Course → Saves a new course.
+Edit Course → Updates selected course.
+Delete Course → Removes course.
+🖱️ When Clicking a Course:
+
+Fills textboxes with selected course info for editing.
+5. Enrollment Form (EnrollmentForm.cs)
+📌 Purpose: Assign students to courses.
+
+🖼️ UI Elements:
+
+Dropdowns:
+Select Student
+Select Course
+Buttons:
+Enroll Student → Saves enrollment to the database.
+📜 When Clicking ‘Enroll Student’
+
+Stores StudentID and CourseID in the database.
+6. Grades Form (GradesForm.cs)
+📌 Purpose: Assign/view student grades.
+
+🖼️ UI Elements:
+
+Dropdowns:
+Select Student
+Select Course
+Textbox:
+Enter Grade
+Buttons:
+Save Grade → Saves grade in the database.
+📜 When Clicking ‘Save Grade’
+
+Updates the Grades Table with the entered grade.
+
+
